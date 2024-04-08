@@ -1,34 +1,28 @@
-import './App.css'
+import React from 'react';
 import CardTrilha from './components/CardTrilha/index.jsx'
+import Header from './components/Header/header.jsx'
+import "../src/App.css"
+import useFetch from './Hooks/useFetch.js'
+import trilhasData from '../public/trilhas.json'
 
 function App() {
-
-  const listaTrilhas = [
-    {
-      nomeTrilha: "Trilha Lagoinha do Leste",
-      cidade: "Florianópolis",
-      estado: "SC",
-      duracao: 180,
-      trajeto: 14 ,
-      dificuldade: "Moderada",
-      tipo: "caminhada / tracking",
-      nomeUsuario: "Caled Rivas",
-      urlImage: "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg",
-
-    }
-  ]
+  const [data, loading] = useFetch(trilhasData);
 
   return (
-    <>
-    {
+    <div className="container">
+      <Header />
+      <div className='main-img'>
 
-      listaTrilhas.map((trilha,index) => (
+      </div>
+      <div className='container-trilhas'> 
+    {
+      trilhasData.map((trilha,index) => (
 
         <CardTrilha dadosTrilha={trilha} key={index} />
       ))
     }
-
-    </>
+      </div>
+    </div>
   )
 }
 

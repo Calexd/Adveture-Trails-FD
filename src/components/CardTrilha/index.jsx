@@ -1,16 +1,20 @@
 import * as PropTypes from "prop-types"
+import "./style.css"
 function CardTrilha({dadosTrilha}){
     return(
-        <>
-          <h2>{dadosTrilha.nomeTrilha} - {dadosTrilha.cidade}/{dadosTrilha.estado}</h2>
-          <img width="200px" src={dadosTrilha.urlImage} alt="imagem Trilha"></img>
-          <span>Por: {dadosTrilha.nomeUsuario}</span>
-          <span>Duração: {dadosTrilha.duracao}</span>
-          <span>Trajeto: {dadosTrilha.trajeto}km</span>
-          <span>Dificuldade: {dadosTrilha.dificuldade}</span>
-          <span>Tipo: {dadosTrilha.tipo}</span>
-        
-        </>
+        <div className="card_container">
+            <div className="container-img">
+                <img src={dadosTrilha.urlImage} alt="imagem Trilha"></img>
+            </div>
+            <div className="container-info">
+                <h2>{dadosTrilha.nomeTrilha} - {dadosTrilha.cidade}/{dadosTrilha.estado}</h2>
+                <span>Por: {dadosTrilha.nomeUsuario}</span>
+                <span>Duração: {dadosTrilha.duracao}</span>
+                <span>Trajeto: {dadosTrilha.trajeto}km</span>
+                <span>Dificuldade: {dadosTrilha.dificuldade}</span>
+                <span>Tipo: {dadosTrilha.tipo}</span>
+            </div>
+        </div>
     )
 
 }
