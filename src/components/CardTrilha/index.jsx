@@ -1,12 +1,14 @@
 import * as PropTypes from "prop-types"
-import "./style.css"
+import Styles from "./style.module.css"
+import {CardContent,} from "@mui/material"
 function CardTrilha({dadosTrilha}){
     return(
-        <div className="card_container">
-            <div className="container-img">
+        <CardContent>
+        <div className={Styles.card_container}>
+            <div className={Styles.container_img}>
                 <img src={dadosTrilha.urlImage} alt="imagem Trilha"></img>
             </div>
-            <div className="container-info">
+            <div className={Styles.container_info}>
                 <h2>{dadosTrilha.nomeTrilha} - {dadosTrilha.cidade}/{dadosTrilha.estado}</h2>
                 <span>Por: {dadosTrilha.nomeUsuario}</span>
                 <span>Duração: {dadosTrilha.duracao}</span>
@@ -15,6 +17,7 @@ function CardTrilha({dadosTrilha}){
                 <span>Tipo: {dadosTrilha.tipo}</span>
             </div>
         </div>
+        </CardContent>
     )
 
 }

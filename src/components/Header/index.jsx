@@ -1,13 +1,13 @@
 import React from 'react';
-import "./style.css"
+import Styles from './header.module.css'
 import { Link } from 'react-router-dom';
 
 
 function header(){
     return(
-        <nav className="headercontainer">
-          <Link to ='/' className='title'>Adventure Trails FD</Link>
-          <ul className='explorer'>
+        <nav className={Styles.headercontainer}>
+          <Link to ='/home' className={Styles.title}>Adventure Trails FD</Link>
+          <ul className={Styles.explorer}>
             <Link to='/explorar'>Explorar Trilhas</Link>
             <Link to='/cadastro'>Cadastrar Trilhas</Link>
           </ul>
