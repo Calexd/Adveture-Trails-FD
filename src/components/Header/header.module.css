@@ -14,13 +14,22 @@
     height: 80px;
 }
 
-.explorer, .title {
+.explorer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 300px;
+    width: 450px;
+    padding: 20px;
     list-style-type: none;
     margin-right: 40px;
     margin-left: 40px;
+
+}
+
+.title{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 21px;
 }
 

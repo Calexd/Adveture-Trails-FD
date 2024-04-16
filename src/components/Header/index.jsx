@@ -8,8 +8,8 @@ function header(){
         <nav className={Styles.headercontainer}>
           <Link to ='/home' className={Styles.title}>Adventure Trails FD</Link>
           <ul className={Styles.explorer}>
-            <Link to='/explorar'>Explorar Trilhas</Link>
-            <Link to='/cadastro'>Cadastrar Trilhas</Link>
+            <Link to='/explorar' className={Styles.title}>Explorar Trilhas</Link>
+            <Link to='/cadastro' className={Styles.title}>Cadastrar Trilhas</Link>
           </ul>
         </nav>
     )
