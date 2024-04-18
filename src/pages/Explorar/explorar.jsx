@@ -2,6 +2,8 @@ import CardTrilha from '../../components/CardTrilha/index.jsx';
 import { TrilhasContext } from '../../context/TrilhasContext.jsx';
 import Styles from'./explorar.module.css'
 import { useContext } from 'react';
+import Button from "@mui/material/Button";
+
 
 function explorar(){
   const {trilhas} = useContext(TrilhasContext)

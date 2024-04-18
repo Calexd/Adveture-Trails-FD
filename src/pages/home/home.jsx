@@ -2,6 +2,8 @@ import Styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import backmainImage from "../../assets/backmain.jpg";
 import cadastImage from "../../assets/cadastImage.jfif";
+import Button from "@mui/material/Button";
+
 
 function home() {
   return (
@@ -21,7 +23,7 @@ function home() {
             natureza através do Adventure Trails!
           </span>
           <Link to="/explorar">
-            <button>Explorar Trilhas</button>
+            <Button variant="contained" size="small" disableElevation>Explorar Trilhas</Button>
           </Link>
         </div>
       </div>
@@ -40,7 +42,7 @@ function home() {
             </h3>
           </div>
           <Link to="/explorar">
-            <button>Explorar Trilhas</button>
+          <Button variant="contained" size="small" disableElevation>Explorar Trilhas</Button>
           </Link>
         </div>
         <div className={Styles.info_cadastrar}>
@@ -49,7 +51,7 @@ function home() {
               Compartilhe fotos, dicas e localização<br></br> das suas trilhas favoritas
             </h1>
             <Link to="/cadastro">
-            <button>Cadastrar Trilhas</button>
+            <Button variant="contained" size="small" disableElevation>Cadastrar Trilhas</Button>
           </Link>
           </div>
             <img src={cadastImage} alt="cadast_image"></img>
