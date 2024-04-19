@@ -59,7 +59,6 @@ function CardTrilha({ dadosTrilha }) {
               "& > legend": { mt: 2 },
             }}
           >
-            <Typography component="legend"></Typography>
             <Rating
               name="simple-controlled"
               value={value}
