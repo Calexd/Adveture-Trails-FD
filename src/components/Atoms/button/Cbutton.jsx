@@ -2,10 +2,12 @@ import Button from "@mui/material/Button";
 
 
 
-function Cbutton({children}) {
+function Cbutton({children, variant = "contained", type = ""}) {
+
+  
     return (
         <div>
-            <Button variant="contained" size="small" disableElevation>
+            <Button type={type} variant={variant} size="small" disableElevation>
             {children}
             </Button>
 

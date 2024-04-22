@@ -8,7 +8,7 @@ import Stack from "@mui/material/Stack";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
-import Typography from "@mui/material/Typography";
+
 function CardTrilha({ dadosTrilha }) {
   const [value, setValue] = React.useState(2);
 

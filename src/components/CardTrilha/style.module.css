@@ -51,3 +51,7 @@
 .infoTrilha_por {
     text-align: right;
 }
+
+.container_info h2 {
+    font-size: 20px;
+}

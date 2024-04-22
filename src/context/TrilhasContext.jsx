@@ -93,8 +93,12 @@ export const TrilhasContextProvider = ({children}) => {
       "urlImage": "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg"
     }])
 
+    function addTrail(trailData) {
+      setTrilhas((t => [...t, trailData]))
+    }
+
     return (
-        <TrilhasContext.Provider value={{trilhas, setTrilhas}}>
+        <TrilhasContext.Provider value={{trilhas, setTrilhas, addTrail}}>
             {children}
         </TrilhasContext.Provider>
     )
