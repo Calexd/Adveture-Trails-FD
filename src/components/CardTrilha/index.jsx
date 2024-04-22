@@ -51,8 +51,6 @@ function CardTrilha({ dadosTrilha }) {
                 />
               </Stack>
             </Stack>
-            {/* <span>Dificuldade: {dadosTrilha.dificuldade}</span> */}
-            {/* <span>Tipo: {dadosTrilha.tipo}</span> */}
           </div>
           <Box
             sx={{
